@@ -6,18 +6,17 @@
 #Ignore any leading whitespace in the user’s greeting, and treat the user’s greeting case-insensitively.
 
 txt = input("Greetings! Now enter your greetings: ").lower()
-x = txt.split(" ")
+
+if txt.startswith("hello"):
+    y="$0"
+    
+elif txt.startswith("h"):
+    y="$20"
+
+else:
+    y="$100"
 
 
-
-#if primeira palavra for hello
-    #print "$0"
-
-#elif se primeira letra é h
-    #print "$20"
-
-#else
-    #print "$100"
-
+print(y)
 
 
