@@ -1,4 +1,8 @@
 #não passou no teste: preferredFirstName
+#acho que parar de printar no if/else
+#usar o if/else só pra definir a word
+
+#fora do if else da um print no snake_case: + word
 
 word = input ("camelCase: ")
 aux1 = word
