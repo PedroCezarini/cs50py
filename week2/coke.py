@@ -1,7 +1,22 @@
-while amount_due != 0: #while amount due is greater than 0
+amount_due = 50
 
-(int(amount_due)) = 50 #starting amount_due var
+print("Amount Due:", amount_due)
 
-(int(inserted_coin)) = input("Insert coin: ") #getting the value of the inserted coin
+while amount_due > 0:
+    inserted_coin = input("Insert coin: ")
 
-amount_due -= inserted_coin #getting new value for amount_due
+    if inserted_coin.isdigit():
+        inserted_coin = int(inserted_coin)
+
+        if inserted_coin in [5, 10, 25, 50]:
+            amount_due -= inserted_coin
+        else:
+            print("Coin not accepted.")
+    else:
+        print("Please insert a valid number.")
+
+    if amount_due > 0:
+        print("Amount Due:", amount_due)
+    
+    else:
+        print("Change Owed:", abs(amount_due))
